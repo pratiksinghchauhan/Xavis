@@ -17,14 +17,15 @@ Switch to a browser and visit ``` http//:localhost:5000```
 Xavis is targeted to be a personal assistant for one who is keenly into stock markets and has to know information about about a company, it can calculate last 50 days and 200 days average as well Ask him:
 
    **tell me stock prices of aapl**
+      
+   ![ScreenShot](https://raw.github.com/pratiksinghchauhan/Xavis/master/screenshots/FireShot%20Capture%202%20-%20Chatbot%20-%20http___xavis.eu-gb.mybluemix.net_.png)
    
-   ![ScreenShot](https://raw.github.com/pratiksinghchauhan/Xavis/master/screenshots/FireShot%20Capture%201%20-%20Chatbot%20-%201.png)
 
 Apart from this it can also give news about any companies. Ask him:
 
    **tell me news of aapl** 
    
-   ![ScreenShot](https://raw.github.com/pratiksinghchauhan/Xavis/master/screenshots/FireShot%20Capture%202%20-%20Chatbot%20-%20http___xavis.eu-gb.mybluemix.net_.png)
+   ![ScreenShot](https://raw.github.com/pratiksinghchauhan/Xavis/master/screenshots/FireShot%20Capture%201%20-%20Chatbot%20-%201.png)
    
 Find xavis on:
      https://xavis.eu-gb.mybluemix.net 
