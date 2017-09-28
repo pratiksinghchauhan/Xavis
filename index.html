@@ -1,0 +1,159 @@
+<style type="text/css">
+
+     
+.sidebar{     
+    background-color:#0f203a;
+    color: white;
+    background-repeat: repeat;
+    padding:0;
+    min-height:100% !important;
+    position:relative;  
+}
+
+html, body {height: 100%}
+
+.wrap{ height: 100%; overflow: hidden;}
+
+.sidebar .sidebar-content{ 
+    height:100%;
+        width:100%;
+    padding: 5px;
+        margin:0;
+        position:relative;
+}
+
+.chatheading{
+	color: grey;
+}
+
+.chatname{
+	font-size: 120%;
+}
+
+.active{
+	background-color: white;
+}
+
+form { 
+	background: #000; 
+	padding: 3px;
+	position: fixed;
+	bottom: 0; 
+	width: 80%; 
+}
+      
+form input {
+	border: 0; 
+	padding: 10px; 
+	width: 90%; 
+	margin-right: .5%; 
+}
+      
+form button { 
+	width: 9%; 
+	background: rgb(130, 224, 255); 
+	border: none; 
+	padding: 10px; 
+}
+
+.selfchatbox {
+    border-style:solid;
+    border-radius: 5%;
+    width: 35%;
+    background-color: lightgreen;
+    border-color:lightgreen;
+}
+
+.botchatbox {
+    background-color: lightgreen;
+    width: 300px;
+    padding: 25px;
+    margin: 25px;
+}
+
+.col-xs-10{
+  height: 90vh;
+  overflow-y: scroll !important; 
+}
+
+</style>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="wrap">
+<!--                SIDEBAR-->
+                
+                <div class="col-xs-2 sidebar">
+                    <div class="sidebar-content">
+                   
+                  
+                          <section> 
+                            <h1>Xavis</h1>
+                            
+                            <br>
+                            
+                            <p class="chatheading">Bot</p>
+                            <p class="chatname"># Xavis</p>
+
+
+                          </section>
+                    
+                    </div>
+                </div> <!--./col-->
+            
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
+        
+<!--                BLOG COLUMN-->
+                
+                <div class="col-xs-10">
+
+                	  <div id="chat" class="chat"></div>
+
+                    <form action="">
+                      <input id="m" autocomplete="off" /><button>Send</button>
+                    </form>
+
+                </div><!-- ./col -->
+          </div>
+  </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+
+
+<script>
+  $(function () {
+
+            var socket = io();
+            $('form').submit(function(){
+                var input="<b>You:</b>  "+$('#m').val();
+                console.log(input);
+                
+                $('#chat').append('<br><div class="msg">'+input+'<br></div><br>');
+                socket.emit('chat message',{ username:"psc" , message: $('#m').val()});
+                return false;
+                });
+                
+                socket.on('chat message', function(msg){
+                    msg="<b>Xavis:</b> "+msg;
+                    $('#chat').append('<div class="otherchatbox"><div class="avatar"></div><div id="othermsg" class="msg">'+msg+'<br></div></div>' );
+                    });
+                });
+</script>
+   

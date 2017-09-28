@@ -1,0 +1,28 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "A chat bot",
+  "main": "server.js",
+  "dependencies": {
+    "apiai": "^4.0.2",
+    "express": "^4.15.3",
+    "google-finance": "^0.1.9",
+    "socket.io": "^2.0.3",
+    "yfinance": "0.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratiksinghchauhan/ChatBot.git"
+  },
+  "author": "pratik singh chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratiksinghchauhan/ChatBot/issues"
+  },
+  "homepage": "https://github.com/pratiksinghchauhan/ChatBot#readme"
+}

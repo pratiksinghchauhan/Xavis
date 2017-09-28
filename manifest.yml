@@ -1,0 +1,6 @@
+---
+applications:
+- name:    Xavis
+  host:    Xavis
+  memory:  512M
+
