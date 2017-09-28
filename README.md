@@ -24,7 +24,7 @@ Apart from this it can also give news about any companies. Ask him:
 
    **tell me news of aapl** 
    
-   ![ScreenShot](https://raw.github.com/pratiksinghchauhan/Xavis/master/https://github.com/pratiksinghchauhan/Xavis/blob/master/screenshots/FireShot Capture 2 - Chatbot - http___xavis.eu-gb.mybluemix.net_.png)
+   ![ScreenShot](https://raw.github.com/pratiksinghchauhan/Xavis/master/screenshots/FireShot%20Capture%202%20-%20Chatbot%20-%20http___xavis.eu-gb.mybluemix.net_.png)
    
 Find xavis on:
      https://xavis.eu-gb.mybluemix.net 
