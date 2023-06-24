@@ -27,7 +27,7 @@ Apart from this, it can also give news about companies. Ask it:
    
    ![ScreenShot](https://raw.github.com/pratiksinghchauhan/Xavis/master/screenshots/FireShot%20Capture%201%20-%20Chatbot%20-%201.png)
    
-Find Davis on:
+Find Xavis on:
      https://xavis.eu-gb.mybluemix.net 
      
      
